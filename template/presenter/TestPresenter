@@ -1,0 +1,19 @@
+package %Path.presenter
+
+import %Path.contract.%NameContract
+import %Path.model.%NameModel
+
+/**
+ *  author : %User
+ *  date : %Time
+ *  description : { 请添加该类的描述 }
+ */
+class %NamePresenter : %NameContract.IPresenter<%NameContract.IView>() {
+
+    //MVP中的model层实例
+    private var mModel:%NameModel? = null
+
+    init {
+        mModel = %NameModel()
+    }
+}

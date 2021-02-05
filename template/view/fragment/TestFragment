@@ -1,0 +1,110 @@
+package %Path.view.fragment
+
+import android.os.Bundle
+import android.content.Context
+import android.view.View
+import android.view.Gravity%DialogAttribute
+import android.view.ViewGroup%DialogAttribute
+import com.cg.base.mvp.base.%BaseTypeFragment
+import %Path.contract.%NameFMContract
+import %Path.presenter.%NameFMPresenter
+
+/**
+ *  author : %User
+ *  date : %Time
+ *  description : { 请添加该类的描述 }
+ */
+class %NameFragment :%NameFMContract.IView, %BaseTypeFragment<%NameFMContract.IView, %NameFMContract.IPresenter<%NameFMContract.IView>>() {
+
+    //传递给Fragment的参数
+    private lateinit var bundle:Bundle
+    //P层对象，在createPresenter中初始化实例
+    private lateinit var mPresenter: %NameFMContract.IPresenter<%NameFMContract.IView>
+
+    /**
+     * 创建Presenter实例
+     */
+    override fun createPresenter(): %NameFMContract.IPresenter<%NameFMContract.IView> {
+        mPresenter = %NameFMPresenter()
+        return mPresenter
+    }
+
+    /**
+     * 返回当前实例
+     */
+    override fun createView(): %NameFMContract.IView {
+        return this
+    }
+
+    /**
+     * 获取Fragment对象
+     */
+    fun getInstance(): %BaseTypeFragment<%NameFMContract.IView, %NameFMContract.IPresenter<%NameFMContract.IView>> {
+        synchronized(%NameFragment::class){
+            return %NameFragment()
+        }
+    }
+
+    /**
+     * 获取Fragment所在的Activity，BaseView接口方法
+     */
+    override fun getBaseActivity(): Context? {
+        return activity
+    }
+
+    /**
+     * 传递给Fragment的参数
+     */
+    override fun setBundleExtra(bundle: Bundle?) {
+        this.bundle = bundle!!
+    }
+
+    /**
+     * 设置layoutId
+     * 示例： return R.layout.xxx
+     */
+    override fun initLayoutId(): Int {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    /**
+     * 通过layoutId构建的View实例，可在此实例中findViewById，kotlin暂时可不管此方法
+     */
+    override fun initViews(view: View?) {
+        TODO("Not yet implemented")
+    }
+
+    /**
+     * 可在此方法中初始化页面数据，此方法执行在onViewCreated中
+     */
+    override fun initData() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    /**
+     * 可在此方法中设置页面监听，此方法执行在onViewCreated中
+     */
+    override fun initListener() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun setDialogWidth(): Int {%DialogAttribute
+        return ViewGroup.LayoutParams.MATCH_PARENT%DialogAttribute
+    }%DialogAttribute
+
+    override fun setDialogHeight(): Int {%DialogAttribute
+        return ViewGroup.LayoutParams.MATCH_PARENT%DialogAttribute
+    }%DialogAttribute
+
+    override fun setOutSideAlpha(): Float? {%DialogAttribute
+        return 1f%DialogAttribute
+    }%DialogAttribute
+
+    override fun setGravity(): Int {%DialogAttribute
+        return Gravity.CENTER%DialogAttribute
+    }%DialogAttribute
+
+    override fun fragmentIOAnimation(): Int {%DialogAnim
+        return R.style.RightAnimation%DialogAnim
+    }%DialogAnim
+}

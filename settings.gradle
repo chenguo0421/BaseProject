@@ -1,0 +1,7 @@
+include ':b-siwencat-portal'
+include ':f-siwencat-net'
+include ':f-siwencat-db'
+include ':f-siwencat-base'
+include ':f-siwencat-log'
+include ':app'
+rootProject.name = "siwencat"
