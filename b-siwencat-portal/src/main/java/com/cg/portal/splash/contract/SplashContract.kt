@@ -6,10 +6,10 @@ import com.cg.base.mvp.base.intf.BaseView
 
 /**
  *  author : ChenGuo
- *  date : 2021-02-05 17:27:13
+ *  date : 2021-02-05 17:53:58
  *  description : { 请添加该类的描述 }
  */
-class SplashFMContract {
+class SplashContract {
 
     public interface IView:BaseView{
 
