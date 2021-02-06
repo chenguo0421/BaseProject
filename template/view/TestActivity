@@ -13,15 +13,11 @@ import %Path.presenter.%NamePresenter
  */
 class %NameActivity : %NameContract.IView, BaseActivity<%NameContract.IView, %NameContract.IPresenter<%NameContract.IView>>() {
 
-    //P层对象，在createPresenter中初始化实例
-    private lateinit var mPresenter: %NameContract.IPresenter<%NameContract.IView>
-
     /**
      * 创建Presenter实例，该方法执行在onCreate中
      */
     override fun createPresenter(): %NameContract.IPresenter<%NameContract.IView> {
-        mPresenter = %NamePresenter()
-        return mPresenter
+        return %NamePresenter()
     }
 
     /**

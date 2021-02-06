@@ -5,10 +5,8 @@ import com.cg.net.retrofit.base.response.BaseResponse
 import com.cg.net.retrofit.bean.ErrorBean
 import com.cg.net.retrofit.exception.ErrorType
 import com.cg.net.retrofit.utils.NetLoadingDialog
-import com.google.gson.Gson
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
-import retrofit2.HttpException
 import java.lang.Exception
 import java.net.ConnectException
 import java.net.SocketTimeoutException
@@ -38,7 +36,7 @@ abstract class ProgressObserver<T>(
 
     override fun onNext(t: Any) {
         try {
-            var response = t as BaseResponse<T>
+            val response = t as BaseResponse<T>
             if (response.code == Status.SUCCESS) {
                 try {
                     success(response.data)

@@ -22,7 +22,7 @@ import com.trello.rxlifecycle4.components.support.RxDialogFragment
 abstract class BaseDialogFragment<V : BaseView, P : BasePresenter<V>> : RxDialogFragment() {
     private var fragmentTag = ""
     private var mView: V? = null
-    private var mPresenter: P? = null
+    var mPresenter: P? = null
     private var orientation = R.style.RightAnimation
     private val handler = Handler(Looper.getMainLooper())
 

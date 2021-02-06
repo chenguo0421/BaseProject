@@ -18,15 +18,20 @@ class %NameFragment :%NameFMContract.IView, %BaseTypeFragment<%NameFMContract.IV
 
     //传递给Fragment的参数
     private lateinit var bundle:Bundle
-    //P层对象，在createPresenter中初始化实例
-    private lateinit var mPresenter: %NameFMContract.IPresenter<%NameFMContract.IView>
+
+    companion object {
+        //通过@JvmStatic注解，使得在Java中调用instance直接是像调用静态函数一样，
+        //类似KLazilyDCLSingleton.getInstance(),如果不加注解，在Java中必须这样调用: KLazilyDCLSingleton.Companion.getInstance().
+        @JvmStatic
+        //获取Fragment单例对象，使用lazy属性代理，并指定LazyThreadSafetyMode为SYNCHRONIZED模式保证线程安全
+        val instance: %BaseTypeFragment<%NameFMContract.IView, %NameFMContract.IPresenter<%NameFMContract.IView>> by lazy(LazyThreadSafetyMode.SYNCHRONIZED) { %NameFragment() }
+    }
 
     /**
      * 创建Presenter实例
      */
     override fun createPresenter(): %NameFMContract.IPresenter<%NameFMContract.IView> {
-        mPresenter = %NameFMPresenter()
-        return mPresenter
+        return %NameFMPresenter()
     }
 
     /**
@@ -34,15 +39,6 @@ class %NameFragment :%NameFMContract.IView, %BaseTypeFragment<%NameFMContract.IV
      */
     override fun createView(): %NameFMContract.IView {
         return this
-    }
-
-    /**
-     * 获取Fragment对象
-     */
-    fun getInstance(): %BaseTypeFragment<%NameFMContract.IView, %NameFMContract.IPresenter<%NameFMContract.IView>> {
-        synchronized(%NameFragment::class){
-            return %NameFragment()
-        }
     }
 
     /**

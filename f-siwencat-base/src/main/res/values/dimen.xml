@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_dp_0">0dp</dimen>
+    <dimen name="common_line_height">0.4dp</dimen>
+    <dimen name="common_dp_1">1dp</dimen>
+    <dimen name="common_dp_2point5">2.5dp</dimen>
+    <dimen name="common_dp_1point5">1.5dp</dimen>
+    <dimen name="common_dp_3">3dp</dimen>
+    <dimen name="common_dp_4">4dp</dimen>
+    <dimen name="common_dp_4point5">4.5dp</dimen>
+    <dimen name="common_dp_5">5dp</dimen>
+    <dimen name="common_dp_6">6dp</dimen>
+    <dimen name="common_dp_9">9dp</dimen>
+    <dimen name="common_dp_10">10dp</dimen>
+    <dimen name="common_dp_11">11dp</dimen>
+    <dimen name="common_dp_13">13dp</dimen>
+    <dimen name="common_dp_14">14dp</dimen>
+    <dimen name="common_dp_15">15dp</dimen>
+    <dimen name="common_dp_16">16dp</dimen>
+    <dimen name="common_dp_18">18dp</dimen>
+    <dimen name="common_dp_20">20dp</dimen>
+    <dimen name="common_dp_22">22dp</dimen>
+    <dimen name="common_dp_24">24dp</dimen>
+    <dimen name="common_dp_28">28dp</dimen>
+    <dimen name="common_dp_30">30dp</dimen>
+    <dimen name="common_dp_34">34dp</dimen>
+    <dimen name="common_dp_40">40dp</dimen>
+    <dimen name="common_dp_48">48dp</dimen>
+    <dimen name="common_dp_50">50dp</dimen>
+    <dimen name="common_dp_60">60dp</dimen>
+    <dimen name="common_dp_70">70dp</dimen>
+    <dimen name="common_dp_74">74dp</dimen>
+    <dimen name="common_dp_78">78dp</dimen>
+    <dimen name="common_dp_80">80dp</dimen>
+    <dimen name="common_dp_90">90dp</dimen>
+    <dimen name="common_dp_105">105dp</dimen>
+    <dimen name="common_dp_142">142dp</dimen>
+    <dimen name="common_dp_150">150dp</dimen>
+    <dimen name="common_dp_165">165dp</dimen>
+    <dimen name="common_dp_167">167dp</dimen>
+    <dimen name="common_dp_177">177dp</dimen>
+    <dimen name="common_dp_188">188dp</dimen>
+    <dimen name="common_dp_222">222dp</dimen>
+    <dimen name="common_dp_230">230dp</dimen>
+    <dimen name="common_dp_450">450dp</dimen>
+
+
+    <dimen name="common_margin_dp_4">4dp</dimen>
+    <dimen name="common_margin_dp_5">5dp</dimen>
+    <dimen name="common_margin_dp_6">6dp</dimen>
+    <dimen name="common_margin_dp_8">8dp</dimen>
+    <dimen name="common_margin_dp_10">10dp</dimen>
+    <dimen name="common_margin_dp_12">12dp</dimen>
+    <dimen name="common_margin_dp_32">32dp</dimen>
+
+
+
+    <dimen name="common_sp_9">9sp</dimen>
+    <dimen name="common_sp_10">10sp</dimen>
+    <dimen name="common_sp_12">12sp</dimen>
+    <dimen name="common_sp_14">14sp</dimen>
+    <dimen name="common_sp_16">16sp</dimen>
+    <dimen name="common_sp_18">18sp</dimen>
+    <dimen name="common_sp_22">22sp</dimen>
+    <dimen name="common_sp_26">26sp</dimen>
+</resources>

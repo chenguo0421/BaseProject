@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_base_header"/>
+
+
+
+
+    <com.cg.base.widget.circleimageview.CircleImageView
+            android:id="@+id/user_icon_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/icon_siwencat_red"
+            android:layout_marginTop="60dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFFF0000"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="30dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp">
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"/>
+        <EditText
+                android:id="@+id/user_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/common_text_color_cdcdcd"
+                android:textColor="@color/common_text_color_3d3d3d"
+                android:textSize="14sp"
+                android:inputType="text"
+                android:hint="@string/portal_login_edit_username_hint"
+                android:background="@null"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/common_red"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="30dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp">
+        <ImageView
+                android:id="@+id/show_hidden_psw_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/portal_eye_close_icon"
+                android:scaleType="centerInside"/>
+        <EditText
+                android:id="@+id/psw_et"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/common_text_color_cdcdcd"
+                android:textColor="@color/common_text_color_3d3d3d"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                android:hint="@string/portal_login_edit_psw_hint"
+                android:background="@null"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:textColor="@color/common_text_color_3d3d3d"
+                  android:textSize="14sp"
+                  android:text="@string/portal_login_text_forget_psw"/>
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/common_red"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+    <TextView
+            android:id="@+id/login_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:textColor="@color/common_white"
+            android:background="@drawable/circle_border_red_transparent"
+            android:gravity="center"
+            android:text="@string/portal_login_text_login"/>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+        <TextView
+                android:layout_toRightOf="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/common_text_color_3d3d3d"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="@string/portal_login_text_remember_psw"/>
+        <TextView
+                android:id="@+id/register_tv"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/common_text_color_3d3d3d"
+                android:textSize="14sp"
+                android:gravity="center_vertical|right"
+                android:layout_alignParentRight="true"
+                android:text="@string/portal_login_text_register"/>
+    </RelativeLayout>
+
+</LinearLayout>

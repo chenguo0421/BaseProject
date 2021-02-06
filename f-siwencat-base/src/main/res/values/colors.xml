@@ -8,4 +8,37 @@
     <color name="common_transparent">#00000000</color>
     <color name="common_white">#FFFFFFFF</color>
     <color name="common_title_bg">#FFFF0000</color>
+
+    <color name="common_text_color_cdcdcd">#FF707070</color>
+    <color name="common_text_color_cdcdcd_50">#77707070</color>
+    <color name="common_text_color_red">#FFFF0000</color>
+    <color name="common_text_color_333333">#FF333333</color>
+    <color name="common_text_color_666666">#FF666666</color>
+    <color name="common_color_eeeeee">#FFEEEEEE</color>
+
+    <color name="common_line_color_gray">#FF666666</color>
+
+
+    <color name="common_text_color_3d3d3d">#FF3d3d3d</color>
+
+
+    <color name="common_tab_bg_dbdbdb">#33DBDBDB</color>
+
+    <color name="common_transparent_30">#33000000</color>
+    <color name="common_red">#FFFF0000</color>
+    <color name="common_red_88transparent">#88ff0000</color>
+    <color name="common_red_transparent">#44ff0000</color>
+    <color name="common_gray">#FF707070</color>
+    <color name="common_cyan">#FF00FFFF</color>
+    <color name="common_yellow">#FFFFFF00</color>
+    <color name="common_color_f2f2f2">#F2F2F2</color>
+    <color name="common_color_88b5f3">#FF88B5F3</color>
+
+
+
+    <color name="common_color_efeaea">#FFEFEAEA</color>
+    <color name="common_color_e74b4b">#FFE74B4B</color>
+    <color name="common_text_color_999999">#FF999999</color>
+
+
 </resources>

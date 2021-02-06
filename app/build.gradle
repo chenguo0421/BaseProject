@@ -2,6 +2,14 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+    id "com.alibaba.arouter"
+}
+kapt {
+    arguments {
+        // ARouter 配置
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
 }
 
 android {
@@ -16,7 +24,16 @@ android {
         versionName rootProject.ext.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
     }
+//    signingConfigs {
+//        config {
+//            keyPassword KEY_PASSWORD
+//            storeFile file(STORE_FILE_PATH)
+//            keyAlias KEY_ALIAS
+//            storePassword KEYSTORE_PASSWORD
+//        }
+//    }
 
     buildTypes {
         release {
@@ -47,6 +64,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation project(":f-siwencat-base")
+    implementation project(':b-siwencat-portal')
 
-    annotationProcessor "com.alibaba:arouter-compiler:${rootProject.ext.arouterApi}"
+    kapt "com.alibaba:arouter-compiler:${rootProject.ext.arouter}"
 }

@@ -1,0 +1,226 @@
+{
+  "code": 200,
+  "msg": "Success",
+  "data": {
+    "banners":[
+      "file:///android_asset/img/assets_gift_image2.png",
+      "file:///android_asset/img/assets_gift_image2.png",
+      "file:///android_asset/img/assets_gift_image2.png"
+    ],
+    "menus": [
+      {
+        "type": 1,
+        "title": "file:///android_asset/img/assets_gift_image22.png",
+        "hotText": "品牌正品",
+        "hotTextColor": "#FFFFFFFF",
+        "hotTextBGColor": "#FFE74B4B",
+        "url": ["file:///android_asset/img/assets_gift_image3.png","file:///android_asset/img/assets_gift_image4.png"]
+      },
+      {
+        "type": 0,
+        "title": "每日好店",
+        "hotText": "武汉开城Go>",
+        "hotTextColor": "#FFE74B4B",
+        "hotTextBGColor": "#FFFFFF",
+        "url": ["file:///android_asset/img/assets_gift_image5.png","file:///android_asset/img/assets_gift_image6.png"]
+      },
+      {
+        "type": 0,
+        "title": "聚划算",
+        "hotText": "品牌 | 大额券",
+        "hotTextColor": "#FFE74B4B",
+        "hotTextBGColor": "#FFFFFF",
+        "url": ["file:///android_asset/img/assets_gift_image7.png","file:///android_asset/img/assets_gift_image8.png"]
+      },
+      {
+        "type": 0,
+        "title": "发现好货",
+        "hotText": "美好新生活",
+        "hotTextColor": "#FFE74B4B",
+        "hotTextBGColor": "#FFFFFF",
+        "url": ["file:///android_asset/img/assets_gift_image9.png","file:///android_asset/img/assets_gift_image10.png"]
+      },
+      {
+        "type": 0,
+        "title": "新品首发",
+        "hotText": "开云闪购日>",
+        "hotTextColor": "#FFE74B4B",
+        "hotTextBGColor": "#FFFFFF",
+        "url": ["file:///android_asset/img/assets_gift_image11.png","file:///android_asset/img/assets_gift_image12.png"]
+      },
+      {
+        "type": 0,
+        "title": "天天特卖",
+        "hotText": "9.9包邮",
+        "hotTextColor": "#FFE74B4B",
+        "hotTextBGColor": "#FFFFFF",
+        "url": ["file:///android_asset/img/assets_gift_image13.png","file:///android_asset/img/assets_gift_image14.png"]
+      }
+    ],
+    "centerBanner": "file:///android_asset/img/assets_gift_image15.png",
+    "giftList": [
+      {
+        "giftTypeText": "东京优品",
+        "giftTypeTextDis": "为您力荐",
+        "gifts": [
+          {
+            "rowIndex": 1,
+            "colIndex": 1,
+            "name":"AHC B5玻尿酸臻致补水护肤套装经典款 化妆水+乳液",
+            "convertNum": 52,
+            "url": ["file:///android_asset/img/assets_gift_image16.png"],
+            "price": "169"
+          },
+          {
+            "rowIndex": 1,
+            "colIndex": 2,
+            "name":"珀莱雅紧致肌密护肤套装 补水抗皱滋润修护淡化细纹",
+            "convertNum": 692,
+            "url": ["file:///android_asset/img/assets_gift_image17.png"],
+            "price": "299"
+          },
+          {
+            "rowIndex": 2,
+            "colIndex": 1,
+            "name":"自然堂套装雪域精粹4件套(乳液+面膜+喷雾+洗面奶)",
+            "convertNum": 1807,
+            "url": ["file:///android_asset/img/assets_gift_image18.png"],
+            "price": "188"
+          },
+          {
+            "rowIndex": 2,
+            "colIndex": 2,
+            "name":"半亩花田海藻面膜女 纯小颗粒天然补水保湿清洁免洗面膜",
+            "convertNum": 69,
+            "url": ["file:///android_asset/img/assets_gift_image19.png"],
+            "price": "129.9"
+          },
+          {
+            "rowIndex": 3,
+            "colIndex": 1,
+            "name":"御泥坊 美白嫰肤睡眠面膜(美白淡斑免洗 烟酰胺熬夜修护)",
+            "convertNum": 850,
+            "url": ["file:///android_asset/img/assets_gift_image20.png"],
+            "price": "88"
+          },
+          {
+            "rowIndex": 3,
+            "colIndex": 2,
+            "name":"完美日记 光感持妆气垫霜B02含替换装(赖冠霖同款气垫BB)",
+            "convertNum": 1420,
+            "url": ["file:///android_asset/img/assets_gift_image21.png"],
+            "price": "99"
+          }
+        ]
+      },
+      {
+        "giftTypeText": "数码精品",
+        "giftTypeTextDis": "超值好货",
+        "gifts": [
+          {
+            "rowIndex": 1,
+            "colIndex": 1,
+            "name":"魔声(Monster) Clarity101真无线智慧触控立体声蓝牙耳机",
+            "convertNum": 88,
+            "url": ["file:///android_asset/img/assets_gift_image23.png"],
+            "price": "399"
+          },
+          {
+            "rowIndex": 1,
+            "colIndex": 2,
+            "name":"先科(SAST)无线蓝牙迷你音箱插卡手机电脑扩音器低音炮",
+            "convertNum": 1000,
+            "url": ["file:///android_asset/img/assets_gift_image24.png"],
+            "price": "99"
+          },
+          {
+            "rowIndex": 2,
+            "colIndex": 1,
+            "name":"石头(roborock)扫地机器人 激光导航大吸力全自动吸尘器",
+            "convertNum": 5,
+            "url": ["file:///android_asset/img/assets_gift_image25.png"],
+            "price": "2099"
+          },
+          {
+            "rowIndex": 2,
+            "colIndex": 2,
+            "name":"佳能(Canon) PowerShot G7 X Mark || G7X2数码相机",
+            "convertNum": 2,
+            "url": ["file:///android_asset/img/assets_gift_image26.png"],
+            "price": "3999"
+          },
+          {
+            "rowIndex": 3,
+            "colIndex": 1,
+            "name":"舒客(Saky)电动牙刷 成人声波充电式震动牙刷防水G2211",
+            "convertNum": 9,
+            "url": ["file:///android_asset/img/assets_gift_image27.png"],
+            "price": "5188"
+          },
+          {
+            "rowIndex": 3,
+            "colIndex": 2,
+            "name":"Apple AirPods蓝牙耳机(iPhone/iPad/Apple Watch)",
+            "convertNum": 2,
+            "url": ["file:///android_asset/img/assets_gift_image28.png"],
+            "price": "999"
+          }
+        ]
+      },
+      {
+        "giftTypeText": "家居良品",
+        "giftTypeTextDis": "新品配购",
+        "gifts": [
+          {
+            "rowIndex": 1,
+            "colIndex": 1,
+            "name":"吸盘牙刷架免打孔套装 吸壁式卫生间 于是壁挂式洗漱架用品",
+            "convertNum": 100,
+            "url": ["file:///android_asset/img/assets_store_image13.png"],
+            "price": "29.9"
+          },
+          {
+            "rowIndex": 1,
+            "colIndex": 2,
+            "name":"意可可(ecoco)卫生间纸巾盒免打孔厕纸盒壁挂防水卷纸筒",
+            "convertNum": 432,
+            "url": ["file:///android_asset/img/assets_store_image24.png"],
+            "price": "42"
+          },
+          {
+            "rowIndex": 2,
+            "colIndex": 1,
+            "name":"洁丽雅(Grace)毛巾家纺 条纹系列纯棉强吸水毛巾两条装",
+            "convertNum": 68,
+            "url": ["file:///android_asset/img/assets_store_image25.png"],
+            "price": "24.9"
+          },
+          {
+            "rowIndex": 2,
+            "colIndex": 2,
+            "name":"网易严选 日系和风条纹男女家居拖鞋 女士粉色 38-39",
+            "convertNum": 25,
+            "url": ["file:///android_asset/img/assets_store_image14.png"],
+            "price": "39.8"
+          },
+          {
+            "rowIndex": 3,
+            "colIndex": 1,
+            "name":"卡三日式垃圾桶家用户按压式纸篓带盖垃圾桶 按压式垃圾桶",
+            "convertNum": 106,
+            "url": ["file:///android_asset/img/assets_store_image22.png"],
+            "price": "33.8"
+          },
+          {
+            "rowIndex": 3,
+            "colIndex": 2,
+            "name":"宝巢(BAOCHAO)内衣收纳盒放袜子内裤抽屉式收纳柜",
+            "convertNum": 68,
+            "url": ["file:///android_asset/img/assets_store_image23.png"],
+            "price": "71"
+          }
+        ]
+      }
+    ]
+  }
+}

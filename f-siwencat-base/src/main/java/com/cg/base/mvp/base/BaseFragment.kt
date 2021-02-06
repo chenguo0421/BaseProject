@@ -14,7 +14,7 @@ import com.trello.rxlifecycle4.components.support.RxFragment
  */
 abstract class BaseFragment<V : BaseView, P : BasePresenter<V>> : RxFragment(){
     private var mView: V? = null
-    private var mPresenter: P? = null
+    var mPresenter: P? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -5,6 +5,10 @@ import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import com.cg.base.mvp.base.intf.BaseView
 import com.trello.rxlifecycle4.components.support.RxAppCompatActivity
 
@@ -15,7 +19,7 @@ import com.trello.rxlifecycle4.components.support.RxAppCompatActivity
  */
 abstract class BaseActivity<V : BaseView, P : BasePresenter<V>> : RxAppCompatActivity() {
     private var mView: V? = null
-    private var mPresenter: P? = null
+    var mPresenter: P? = null
     protected val TAG = this.javaClass.name
     private val _bundleFragmentKey = "android:support:fragments"
 
@@ -55,6 +59,16 @@ abstract class BaseActivity<V : BaseView, P : BasePresenter<V>> : RxAppCompatAct
     protected abstract fun createPresenter(): P
     protected abstract fun createView(): V
 
+
+    fun AppCompatActivity.addFragment(fragment: Fragment, frameId: Int){
+        supportFragmentManager.inTransaction { add(frameId, fragment) }
+    }
+
+    fun AppCompatActivity.replaceFragment(fragment: Fragment, frameId: Int) {
+        supportFragmentManager.inTransaction{replace(frameId, fragment)}
+    }
+
+    inline fun FragmentManager.inTransaction(func: FragmentTransaction.() -> FragmentTransaction) = beginTransaction().func().commit()
 
     public override fun onDestroy() {
         mPresenter?.detachView()

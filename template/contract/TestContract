@@ -24,4 +24,5 @@ class %NameContract {
     public abstract class IModel:BaseModel(){
 
     }
+
 }

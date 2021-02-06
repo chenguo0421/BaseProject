@@ -50,6 +50,20 @@ dependencies {
     api "androidx.cardview:cardview:${rootProject.ext.cardviewVersion}"
     implementation "com.hjq:toast:${rootProject.ext.toastVersion}"
 
+    api "org.jetbrains.anko:anko-commons:${rootProject.ext.ankoVersion}"
+    api "org.jetbrains.anko:anko-design:${rootProject.ext.ankoVersion}"
+    api "com.github.pdog18:dimension-extensions:${rootProject.ext.dimensionVersion}"
+
+    // 注意：分包之后不会有默认的Header和Footer需要手动添加！还是原来的三种方法！
+    api  "com.scwang.smart:refresh-layout-kernel:${rootProject.ext.smartLayoutVersion}"      //核心必须依赖
+    api  "com.scwang.smart:refresh-header-classics:${rootProject.ext.smartLayoutVersion}"    //经典刷新头
+    api  "com.scwang.smart:refresh-header-radar:${rootProject.ext.smartLayoutVersion}"       //雷达刷新头
+    api  "com.scwang.smart:refresh-header-falsify:${rootProject.ext.smartLayoutVersion}"     //虚拟刷新头
+    api  "com.scwang.smart:refresh-header-material:${rootProject.ext.smartLayoutVersion}"    //谷歌刷新头
+    api  "com.scwang.smart:refresh-header-two-level:${rootProject.ext.smartLayoutVersion}"   //二级刷新头
+    api  "com.scwang.smart:refresh-footer-ball:${rootProject.ext.smartLayoutVersion}"        //球脉冲加载
+    api  "com.scwang.smart:refresh-footer-classics:${rootProject.ext.smartLayoutVersion}"    //经典加载
+
     api project(":f-siwencat-log")
     api project(":f-siwencat-net")
     api project(":f-siwencat-db")
